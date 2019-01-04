@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/courseac_cover"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/courseac_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cwcwcw"
+        android:layout_marginBottom="20dp"/>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+
+                android:layout_gravity="bottom"
+                android:padding="10dp"
+                ></TabWidget>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                >
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v4.app.FragmentTabHost>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

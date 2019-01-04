@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="70dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="课程"
+        android:textSize="50sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/ad-im"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_margin="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/zero"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="277dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ed_find"
+            android:text=""/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/im_find"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
